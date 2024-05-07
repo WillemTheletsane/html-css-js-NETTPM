@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETTPM Home Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo"><img src="/assets/LOGO.png" alt="NETTPM Logo"></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#About">About Us</a></li>
+                <li><a href="#Contact">Contact Us</a></li>
+                <li><a href="#Services">Our Services</a></li>
+                <li><a href="#Content">Content</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hamburger Navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo"><img src="/assets/LOGO.png" alt="NETTPM Logo"></div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#About" onclick="toggleMenu()">About Us</a></li>
+                    <li><a href="#Contact" onclick="toggleMenu()">Contact Us</a></li>
+                    <li><a href="#Services" onclick="toggleMenu()">Our Services</a></li>
+                    <li><a href="#Content" onclick="toggleMenu()">Content</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content Sections -->
+    <section id="About" class="center-section">
+        <h2>About Us</h2>
+        <div class="section_pic-container">
+            <img src="/assets/aboutus.png" alt="About"/>
+        </div>
+        <p>Preferred community internet services destination where service meets integrity and dignity of our clients.</p>
+        <p>For your desired service and intended projects at your fingertips.</p>
+        <p>Visit us today and discover why NETTPM is the preferred destination for a reliable service!</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/disclaimer.pdf')">Download Disclaimer</button>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <div class="section_pic-container">
+            <img src="/assets/contact.png" alt="contact"/>
+        </div>
+        <h2>Contact Us</h2>
+        <p>If you have any questions, comments, or feedback, feel free to reach out to us using the contact form below:</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" autocomplete="name" required> <!-- Added autocomplete attribute -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required> <!-- Added autocomplete attribute -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" autocomplete="message" required></textarea> <!-- Added autocomplete attribute -->
+            <button type="submit">Send Message</button>
+        </form>
+        <p>You can also contact us directly at:</p>
+        <p>Address: 381 Wessels Mota Street, Zone 10 Extension 3, Sebokeng, South Africa</p>
+        <p>Phone: +27</p>
+        <p>Email: puffpitso@gmail.com</p>
+    </section>
+
+    <section id="Services" class="center-section">
+        <h2>Our Services</h2>
+        <div class="section_pic-container">
+            <img src="/assets/services.jpg" alt="service">
+        </div>
+        <ul>
+            <li><strong>High-Speed Internet Access:</strong> Enjoy lightning-fast internet speeds for all your browsing and streaming needs.</li>
+            <li><strong>Custom made service:</strong> Receive your desired service just the way you want or prefer.</li>
+            <li><strong>Printing and Scanning:</strong> Easily print or scan documents with our convenient printing and scanning stations.</li>
+            <li><strong>Confidentiality:</strong> Rest assured of our confidentiality promise when dealing with the most sensitive personal information without compromise to any third party.</li>
+        </ul>
+        <p>At NETTPM, we're committed to providing top-notch services to enhance your internet cafe experience.</p>
+    </section>
+
+    <section id="Content" class="center-section">
+        <h2>Content</h2>
+        <div class="section_pic-container">
+            <img src="/assets/content.png" alt="content"/>
+        </div>
+        <p>Stay up-to-date with the latest news, tips, and trends in technology and internet culture:</p>
+        <ul>
+            <li><a href="#">Internet Access</a></li>
+            <li><a href="#">lastest news</a></li>
+            <li><a href="#">Internet culture</a></li>
+        </ul>
+
+        <h2>Live Location</h2>
+        <div id="location-container">
+            <img src="./assets/mobile-application-gps-navigation-pointer-web-button-menu-digital-silhouette-style-icon-free-vector.jpg" alt="location icon" class="icon" onclick="location.href='https://maps.app.goo.gl/6X3hZUTkjnSz3TVb6'"/>
+        </div>
